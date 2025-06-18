@@ -10,9 +10,11 @@ export const PlayerAPI = {
   all: function () {
     return this.players;
   },
+  addPlayer: function ({ number, name, position }) {
+    this.players.push({ number, name, position });
+  },
   get: function (id) {
     const isPlayer = (p) => p.number === id;
-
     return this.players.find(isPlayer);
   },
 }
