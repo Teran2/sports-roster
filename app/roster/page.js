@@ -8,3 +8,8 @@ export default function Roster() {
     </main>
   );
 }
+// See if you can figure this part out on your own by:
+
+// Using useState to store the data from querying the players API
+// Iterating over all the players on the page
+// Add a link to navigate to that particular player

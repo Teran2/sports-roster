@@ -8,7 +8,12 @@ export default function Player() {
   const player = PlayerAPI.get(parseInt(id, 10));
 
   if (!player) {
-    return <div>NO WAY HOSE A, that player was not found!</div>;
+    return (
+      <>
+        <div>NO WAY HOSE A, that player was not found!</div>
+        <Link href='/roster'>Back it Up...</Link>
+      </>
+    );
   }
 
   return (
